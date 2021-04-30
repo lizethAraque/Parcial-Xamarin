@@ -4,11 +4,30 @@
              xmlns:local="clr-namespace:App4"
              x:Class="App4.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView x:Name="bycicles" CachingStrategy="RecycleElement" HasUnevenRows="True" ItemTapped="clickElement">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell Height="60" >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="70"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <Image Grid.Column="0" HorizontalOptions="Start" Source="{Binding imagen}" Margin="5"></Image>
+                                <Label x:Name="idLabel" Grid.Column="1" Text="{Binding name}" VerticalTextAlignment="Center" Margin="5"/>
+                                <Image Grid.Column="2" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand" Source="arrow.png" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button Text="Añadir inventario"  Clicked="añadirBycicle"/>
+        </StackLayout>
+    </ContentPage.Content>
 </ContentPage>

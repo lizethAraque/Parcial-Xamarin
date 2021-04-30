@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace App4.Services
 {
-    class BikeDatabase
+    public class BikeDatabase
     {
         readonly SQLiteAsyncConnection database;
 
@@ -17,13 +17,13 @@ namespace App4.Services
             database.CreateTableAsync<Bike>().Wait();
         }
 
-        public Task<List<Bike>> GetNotesAsync()
+        public Task<List<Bike>> GetBikeAsync()
         {
             //Get all notes.
             return database.Table<Bike>().ToListAsync();
         }
 
-        public Task<Model.Bike> GetNoteAsync(int id)
+        public Task<Model.Bike> GetBikeAsync(int id)
         {
             // Get a specific note.
             return database.Table<Bike>()
@@ -31,7 +31,7 @@ namespace App4.Services
                             .FirstOrDefaultAsync();
         }
 
-        public Task<int> SaveNoteAsync(Bike bike)
+        public Task<int> SaveBikeAsync(Bike bike)
         {
             if (bike.ID != 0)
             {
@@ -45,7 +45,9 @@ namespace App4.Services
             }
         }
 
-        public Task<int> DeleteNoteAsync(Bike bike)
+
+
+        public Task<int> DeleteBikeAsync(Bike bike)
         {
             // Delete a note.
             return database.DeleteAsync(bike);

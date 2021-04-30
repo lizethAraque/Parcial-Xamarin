@@ -2,7 +2,26 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App4.App">
+    <!-- Application resource dictionary -->
     <Application.Resources>
 
+        <!-- Application resource dictionary -->
+        <ResourceDictionary>
+            <!--General Colors-->
+            <Color x:Key="MainColor">#4099FF</Color>
+            <Color x:Key="FontColor">#52656b</Color>
+            <Color x:Key="AccentColor1">#FFE533</Color>
+            <Color x:Key="AccentColor2">#FFF799</Color>
+            <Color x:Key="BackgroundColor">#f9f9f9</Color>
+            <!--Menu Colors-->
+            <Color x:Key="MenuColor">#52656b</Color>
+            <Color x:Key="MenuFontColor">#ffffff</Color>
+
+
+            <Style TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#c1bdba"/>
+                <Setter Property="BarTextColor" Value="#f6f6f6"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

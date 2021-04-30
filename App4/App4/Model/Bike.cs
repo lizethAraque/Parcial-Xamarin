@@ -5,11 +5,11 @@ using SQLite;
 
 namespace App4.Model
 {
-    class Bike
+    public  class Bike
     {
         [PrimaryKey, AutoIncrement]
         public int ID { get; set; }
-        public string Text { get; set; }
-        public DateTime Date { get; set; }
+        public string name { get; set; }
+        public String imagen { get; set; }
     }
 }
