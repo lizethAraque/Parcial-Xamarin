@@ -50,10 +50,11 @@ namespace App4.View
            
             if (!string.IsNullOrWhiteSpace(Marca.Text) && !string.IsNullOrWhiteSpace(Imagen.Text))
             {
-                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("url");
-                request.Method = "HEAD";
+               
                 try
                 {
+                    HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create(Imagen.Text);
+                    request.Method = "HEAD";
                     request.GetResponse();
                     Bike bike = new Bike();
                     bike.name = Marca.Text;
