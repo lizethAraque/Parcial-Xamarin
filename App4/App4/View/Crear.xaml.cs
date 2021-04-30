@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
@@ -46,13 +47,25 @@ namespace App4.View
 
         public async void saveData(object sender, EventArgs args)
         {
-            if(!string.IsNullOrWhiteSpace(Marca.Text) && !string.IsNullOrWhiteSpace(Imagen.Text))
+           
+            if (!string.IsNullOrWhiteSpace(Marca.Text) && !string.IsNullOrWhiteSpace(Imagen.Text))
             {
-                Bike bike = new Bike();
-                bike.name = Marca.Text;
-                bike.imagen = Imagen.Text;
-                await App.Database.SaveBikeAsync(bike);
-                Application.Current.MainPage = new NavigationPage(new MainPage());
+                HttpWebRequest request = (HttpWebRequest)HttpWebRequest.Create("url");
+                request.Method = "HEAD";
+                try
+                {
+                    request.GetResponse();
+                    Bike bike = new Bike();
+                    bike.name = Marca.Text;
+                    bike.imagen = Imagen.Text;
+                    await App.Database.SaveBikeAsync(bike);
+                    Application.Current.MainPage = new NavigationPage(new MainPage());
+                }
+                catch
+                {
+                    await DisplayAlert("Alert", "La url ingresada es invalida ", "OK");
+                }
+               
             } else
             {
                 await DisplayAlert("Alert", "Algunos datos no estan bien diligenciados", "OK");
