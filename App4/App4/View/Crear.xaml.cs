@@ -46,13 +46,18 @@ namespace App4.View
 
         public async void saveData(object sender, EventArgs args)
         {
-            Bike bike = new Bike();
-        
-            bike.name = Marca.Text;
-            bike.imagen = Imagen.Text;
-            await App.Database.SaveBikeAsync(bike);
-            
-            Application.Current.MainPage = new NavigationPage(new MainPage());
+            if(!string.IsNullOrWhiteSpace(Marca.Text) && !string.IsNullOrWhiteSpace(Imagen.Text))
+            {
+                Bike bike = new Bike();
+                bike.name = Marca.Text;
+                bike.imagen = Imagen.Text;
+                await App.Database.SaveBikeAsync(bike);
+                Application.Current.MainPage = new NavigationPage(new MainPage());
+            } else
+            {
+                await DisplayAlert("Alert", "Algunos datos no estan bien diligenciados", "OK");
+            }
+          
         }
 
         public async void update(object sender, EventArgs args)
