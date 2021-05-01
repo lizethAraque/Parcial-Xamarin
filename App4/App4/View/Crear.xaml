@@ -6,8 +6,15 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout Orientation="Vertical" Padding="30" Spacing="40">
-          
-            <Frame BackgroundColor="#BF043055" HasShadow="False">
+            
+                <ActivityIndicator x:Name="activity"
+                       IsRunning="False"
+                       IsEnabled="False"
+                       IsVisible="False"
+                       Color="Blue"
+                       BackgroundColor="White"/>
+            
+              <Frame BackgroundColor="#BF043055" HasShadow="False">
                 <StackLayout Orientation="Vertical" Spacing="10">
                     <Editor x:Name="Marca" Text="{Binding Description}" Placeholder="Marca de la bicicleta"   
                            PlaceholderColor="White" HeightRequest="150"   

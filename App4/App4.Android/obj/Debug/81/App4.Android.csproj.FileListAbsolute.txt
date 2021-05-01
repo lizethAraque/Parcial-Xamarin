@@ -164,6 +164,12 @@ C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\Syste
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\System.Web.Services.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\Mono.Security.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\System.Numerics.Vectors.pdb
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\App4.dll.mdb
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable\arrow.png
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-hdpi\arrow.png
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xhdpi\arrow.png
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xxhdpi\arrow.png
+C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xxxhdpi\arrow.png
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\App4.Android.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\FormsViewGroup.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\Mono.Android.pdb
@@ -187,7 +193,6 @@ C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\li
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\System.Web.Services.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\Mono.Security.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\System.Numerics.Vectors.pdb
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\App4.dll.mdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\App4.dll.mdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\android\assets\App4.dll.mdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\android\assets\App4.Android.pdb
@@ -213,11 +218,6 @@ C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\an
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\android\assets\Xamarin.Forms.Platform.Android.pdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\android\assets\Xamarin.Forms.Xaml.pdb
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable\arrow.png
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-hdpi\arrow.png
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xhdpi\arrow.png
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xxhdpi\arrow.png
-C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\res\drawable-xxxhdpi\arrow.png
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4\bin\Debug\netstandard2.0\App4.dll
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\bin\Debug\App4.dll.mdb
 C:\Users\wilso\Desktop\Xamarin\Parcial-Xamarin\App4\App4.Android\obj\Debug\81\linksrc\App4.dll.mdb

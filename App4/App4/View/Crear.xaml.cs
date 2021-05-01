@@ -47,7 +47,10 @@ namespace App4.View
 
         public async void saveData(object sender, EventArgs args)
         {
-           
+            activity.IsEnabled = true;
+            activity.IsRunning = true;
+            activity.IsVisible = true;
+
             if (!string.IsNullOrWhiteSpace(Marca.Text) && !string.IsNullOrWhiteSpace(Imagen.Text))
             {
                
@@ -64,14 +67,18 @@ namespace App4.View
                 }
                 catch
                 {
-                    await DisplayAlert("Alert", "La url ingresada es invalida ", "OK");
+                    DisplayAlert("Alert", "La url ingresada es invalida ", "OK");
                 }
                
             } else
             {
-                await DisplayAlert("Alert", "Algunos datos no estan bien diligenciados", "OK");
+                DisplayAlert("Alert", "Algunos datos no estan bien diligenciados", "OK");
             }
-          
+
+            activity.IsEnabled = false;
+            activity.IsRunning = false;
+            activity.IsVisible = false;
+
         }
 
         public async void update(object sender, EventArgs args)
